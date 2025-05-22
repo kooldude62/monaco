@@ -2465,7 +2465,7 @@ function loadTabs() {
         }
 
         function addTab(title, content = '', id = null) {
-    const defaultText = "--[[\n    Remote Executor\n	Made by: Epick, 1by9, and Unsolved\n	Enjoy!\n ]]\n\n--[[\n	Epicks tips and tricks:\n	1: Always search the game for any parts that are unanchored using out print unanchored button!\n	2: if you find any parts click epick fling\n	3: sometimes the game trust the client too much click our simple spy script to search for any vulnerable remotes.\n	4: If there are parts in the game that are unanchored and have the same name use dex to change their name\n	5: sometimes Epick's fling wont work so use Epick's black hole in games with a bunch of unanchored parts\n	6: games like LGBTQ+ hangout have unanchored parts for you to fling people with\n	7: Not all games will have Vulnerabilitys\n ]]";    
+    const defaultText = "";    
     if (!content) {
         content = defaultText;
     }
@@ -2528,7 +2528,7 @@ function switchTab(tabId) {
             }
         }
         
-        const contentToSet = tab.content.trim() === '' ? "--[[ Remote Executor\n    Made by: Epick, 1by9, and Unsolved\n ENJOY!!!\n ]]" : tab.content;        editor.setValue(contentToSet);
+        const contentToSet = tab.content.trim() === '' ? "--[[ Moon\n    Made by: Epick, 1by9, and Unsolved\n ENJOY!!!\n ]]" : tab.content;        editor.setValue(contentToSet);
         tab.element.classList.add('active');
         currentTab = tabId;
     }
